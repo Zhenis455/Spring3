@@ -25,7 +25,7 @@ public class StudentController {
     public String create(@RequestParam String name,
                          @RequestParam String surname,
                          @RequestParam int exam) {
-        service.add(name, surname, exam); // оценка проставится автоматически
+        service.add(name, surname, exam);
         return "redirect:/students";
     }
 }

@@ -3,8 +3,8 @@ package com.example.model;
 import lombok.*;
 
 @Data
-@NoArgsConstructor      // пустой конструктор
-@AllArgsConstructor     // конструктор со всеми полями
+@NoArgsConstructor
+@AllArgsConstructor
 public class Student {
     private Long id;
     private String name;
