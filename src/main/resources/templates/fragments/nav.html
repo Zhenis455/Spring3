@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-teal" style="background:#138c8c">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/students}">Student List</a>
+        <div class="navbar-nav">
+            <a class="nav-link" th:href="@{/students}">Home</a>
+            <a class="nav-link" th:href="@{/students/new}">Add Student</a>
+        </div>
+        <form class="d-flex ms-auto" th:action="@{/students}" method="get">
+            <input class="form-control me-2" type="search" placeholder="Search" name="q" th:value="${q}">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+</body>
+</html>
